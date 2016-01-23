@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestForm</class>
+ <widget class="QWidget" name="TestForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>考生登录</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_Student">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>475</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab_Practises">
+    <attribute name="title">
+     <string>自我练习</string>
+    </attribute>
+    <widget class="QLabel" name="label_SelectP">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>请选择可以进入的练习：</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_LineP">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>571</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EnterP">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>410</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进入练习</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NoteP">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选中练习简介：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NoteinfoP">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>571</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Test">
+    <attribute name="title">
+     <string>进入考试</string>
+    </attribute>
+    <widget class="QLabel" name="label_NoteinfoT">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>571</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EnterT">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>410</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进入考试</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_LineT">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>571</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NoteT">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选中考试简介：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SelectT">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>请选择可以进入的考试：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Count">
+    <attribute name="title">
+     <string>统计分析</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_LineC">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>571</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SelectC">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>请选择需要统计分析的练习或考试：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EnterT_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>答题情况详细</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EnterT_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>270</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>题目对错分析</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EnterT_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>270</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>其他统计等等</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Personal">
+    <attribute name="title">
+     <string>个人管理</string>
+    </attribute>
+    <widget class="QLabel" name="label_SelectPe">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>请选择需要管理的内容：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>个人信息管理</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>个人登录日志</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Help">
+    <attribute name="title">
+     <string>系统帮助</string>
+    </attribute>
+    <widget class="QTreeView" name="treeView_Help">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>256</width>
+       <height>391</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SelectH">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>请选择显示的帮助内容：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_HelpInfo">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>301</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
