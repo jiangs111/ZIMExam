@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImportQuestion</class>
+ <widget class="QWidget" name="ImportQuestion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>395</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>试题导入</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_Ok">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Process">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>351</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>330</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第三列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col3_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>330</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col1">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第一列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Count">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>40</y>
+     <width>200</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_Clear">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>300</y>
+     <width>37</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重排</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Top">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>首行为标题</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Title">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>试题名称</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>试题题干</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>出题人</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>出题日期</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>试题类型</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>试题答案</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>试题难度</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>关键字</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Exit">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_File">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择需要导入的Excel：</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_Add">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>270</y>
+     <width>37</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>=&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_File">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_View">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>150</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>预览导入（只预览前10行）：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_File">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>551</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectColumns</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col1_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>270</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第二列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col2_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>300</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Note">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>预览表中各数据列名顺序为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col4_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>270</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col5_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>300</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>270</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第四列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col5">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>300</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第五列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col6">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>330</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第六列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col6_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>330</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col7_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>270</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col7">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>270</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第七列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col8">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>300</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>第八列为:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Col8_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>300</y>
+     <width>60</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
